@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
+
+/* 
+img {
+  max-width: 100%;
+}
+*/
+
+section {
+  padding: 5% 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2e2e2e;
+}
+
+ul {
+  list-style: none;
+}
+
+/* header */
+.icono {
+  width: 50px;
+}
+
+/*portada*/
+.portada {
+  background-image: url("../imagenes/manekineko-mirror.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.portada article {
+  height: 100%;
+}
+
+.intereses {
+  margin: 0;
+  padding: 0;
+}
+
+.intereses li {
+  width: 50px;
+  margin-right: 1em;
+}
+
+.disclaimer {
+  background-color: rgb(233, 231, 231);
+}
+/* Estilos Footer */
+footer {
+  background-color: #2e2e2e;
+  color: white;
+  bottom: 0;
+  position: relative;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+footer a {
+  color: rgb(230, 230, 230);
+}
+footer a:hover {
+  color: rgb(148, 148, 148);
+}
+
+/* Seccion JLPT */
+.portadaJLPT {
+  background-image: url("../imagenes/imagenesPlaceholder/examination.jpeg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.columna {
+  margin-bottom: 1.5em;
+}
+
+.portadaJLPTparrafo {
+  background-color: whitesmoke;
+  opacity: 0.6;
+}
