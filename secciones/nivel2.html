@@ -1,46 +1,339 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../imagenes/favicon.png"/>
-    <link rel="stylesheet" href="../estilos/style3.css">
-    <title>Estudiando Japonés - JLPT N1</title>
+
+    <!--link css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Link Font Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!--link css local-->
+    <link rel="stylesheet" href="../estilos/estilos.css">
+
+    <title>JLPT nivel 2 🚀</title>
+    <link rel="icon" href="../imagenes/favicon.png">
 </head>
 <body>
-    <!-- Comienzo de Grid Container-->
-   <div class="container">
-       <!-- Nav Bar index -->
-       <nav>
-        <ul class="navMain">
-            <li id="homeMenuColorTitle">日本語の勉強</li>
-            <a href="../index.html"><li id="homeMenuColor" class="hvr-float">Home</li></a>
-            <a href="nivel4-5.html"><li id="nivel4MenuColor" class="hvr-float"> N4-5</li></a>
-            <a href="nivel3.html"><li id="nivel3MenuColor" class="hvr-float" >N3</li></a>
-            <a href="nivel2.html"><li id="nivel2MenuColor" class="hvr-float">N2</li></a>
-            <a href="nivel1.html"><li id="nivel1MenuColor" class="hvr-float">N1</li></a>
-            <a href="tecnicas.html"><li id="tecnicasMenuColor" class="hvr-float">Técnicas</li></a>
-            <a href="about.html"><li id="sobreElSitioMenuColor" class="hvr-float">Sobre el sitio</li></a>
+<header>
+    <!-- Nav Bar-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand icono" href="../index.html"><img src="../imagenes/Home/tokyo-tower.png" class="d-block w-100" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="jlpt.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">JLPT</a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="jlpt.html">Introduccion</a></li>
+                  <li><a class="dropdown-item" href="nivel4-5.html">Nivel 4-5</a></li>
+                  <li><a class="dropdown-item" href="nivel3.html">Nivel 3</a></li>
+                  <li><a class="dropdown-item active bg-dark" href="nivel2.html">Nivel 2</a></li>
+                  <li><a class="dropdown-item" href="nivel1.html">Nivel 1</a></li>
+                  <li><a class="dropdown-item" href="diccionarios.html">Diccionarios</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="jlpt.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Practicar Japones</a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Leer</a></li>
+                  <li><a class="dropdown-item" href="#">Mirar</a></li>
+                  <li><a class="dropdown-item" href="#">Escuchar</a></li>
+                  <li><a class="dropdown-item" href="#">Viajar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Sobre Mi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Fin Nav -->
+</header>
+<main>
+     <!-- Portada -->
+     <section class="container">
+      <div class="col-12 col-md-12 col-lg-12">
+        <h2> JLPT N2 🚀</h2>
+        <p>Felicitaciones por haber llegado aqui! Si N3 te ha parecido dificil, asegurate de que tengas ese contenido fresco y entendido, porque con N2 todo comienza a mezclarse, verás muchas más maneras distintas para decir lo mismo, y hasta tener 5 palabras en japones que en español significan lo mismo, pero que en Japonés cada una tiene su significado y uso en determinada situación.
+        </p>
+        <p>En mi propia experiencia, mi primera vez rindiendo N3 fue un año luego de haber aprobado N4, y mi idea era rendirlo para medir mis conocimientos. Aprobé con una nota baja, y luego de pensarlo y charlarlo con mi sensei de Japonés, tomé la decisión de repasar los contenidos y rendirlos nuevamente. Depende del ritmo de estudio de cada uno y del objetivo final, si uno considera que es necesario detenerse en un nivel específico para repasar o si a pesar de haber aprobado con lo mínimo, se decide avanzar. El problema es que corremos el riesgo de arrastrar errores y no recordar contenido de N3, y esto nos atrase o nos haga más dificultoso el comprender conceptos y gramática propia de N2.
+        </p>
+        <p>Para este nivel, considero necesario (pero opcional) el tomar clases con profesores nativos. Este nivel se mete de manera más granular en conceptos previamente aprendidos en N3, y en nuevos contenidos que a veces llegan a confundirse con N1. Nos encontraremos con gramática que es muy difícil de traducir o entender en nuestro idioma nativo y las explicaciones y contexto deben darse en Japonés. Por esa razón, además, el complemento de un profesor que entienda tu lengua nativa va a ayudar a que termines de definir los nuevos conceptos de gramatica y vocabulario.
+        </p>
+      </div>
+      <!-- Seccion checkboxes-->
+      <article>
+        <div class="seccionCheckboxNivelesN2 col-12 col-md-8 col-lg-6">
+          <h4>¿Qué necesito para llegar a este nivel? </h4>
+          <br>
+            <p>Altamente recomendable:</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Haber estudiado y comprendido toda la gramática de los niveles anteriores: N5, N4 y N3
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Haber hecho y aprobado uno (o varios) simulacros de examen N3.
+              </label>
+            </div><br>
+            <p>Opcional:</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Haber aprobado el examen JLPT N3 oficial.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Intenta obtener el puntaje más alto que puedas.
+              </label> <br>
+                En caso de haber aprobado el nivel N3 habiendo alcanzado el puntaje mínimo recomendable, no estaría mal considerar volver a repasar el nivel y volver a rendirlo nuevamente para poder obtener mejor nota. Esto es totalmente opcional, ya que no cambia el hecho de que el examen haya sido aprobado el haber logrado el puntaje mínimo, pero en estos casos quizás nos falte repasar un poco más este nivel antes de avanzar al siguiente.
+            </div>
+            
+            <br>
+        </div>
+        <br>
+        <h5>¿Puedo saltarme este nivel y avanzar a N1? </h5>
+        <p class="JLPTfaq">Depende cual sea tu objetivo principal con el idioma japonés, el hecho de que hayas completado el contenido de los niveles anteriores, hace que estudiar y rendir el examen para N2 sea un reto digno de tomar. El tener este nivel aprobado te abrirá las puertas al mundo laboral en Japón, ya que para la mayoría de los empleos, N2 es el mínimo necesario que se le requiere a los extranjeros que quieran aplicar a empresas japonesas. Te permitirá además conseguir un empleo más calificado con este certificado, pudiendo trabajar en empresas de IT o lugares donde el Japonés es la principal lengua hablada.
+        </p>
+        <h5>¿Que voy a lograr si apruebo el contenido de N2?</h5>
+        <p class="JLPTfaq">Según el sitio oficial del <a href="https://www.jlpt.jp/e/about/levelsummary.html">JLPT</a> vas a poder entender, a un cierto nivel, el japonés utilizado para situaciones de la vida diaria. </p>
+        <ul class="listaAptitudesJLPT">
+          <li>Poder leer claramente textos sobre temas diferentes, como artículos y comentarios en periódicos y revistas, y también comprender reseñas críticas.</li>
+          <li>Poder leer material escrito sobre temas generales y seguir su narrativa, además de entender el propósito del autor del texto.</li>
+          <li>Poder escuchar y comprender material auditivo tal como conversaciones coherentes y reportes de noticias, conversaciones a casi la velocidad normal tanto sobre temas cotidianos como sobre diferentes situaciones, poder seguir las ideas y comprender su contenido. También uno es capaz de entender las relaciones entre las personas involucradas en la conversación, y por último poder entender los puntos esenciales del material auditivo que escuchamos.</li>
         </ul>
-    </nav>
-       <!-- Explicacion de que encontrar, Overview.-->
+        <h5>¿Qué logré al haber estudiado este nivel?</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta assumenda ducimus deserunt non eaque, saepe molestiae repellendus hic accusantium exercitationem, quibusdam suscipit ad esse ullam consequatur placeat dolore quis voluptates.</p> 
+        <ul class="listaAptitudesJLPT">
+          <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste commodi officiis architecto tempore accusamus exercitationem, sint vero? Placeat, ut? Iusto obcaecati officiis, dolores cumque tenetur harum facere delectus tempora! Cumque!</li>
+          <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste commodi officiis architecto tempore accusamus exercitationem, sint vero? Placeat, ut? Iusto obcaecati officiis, dolores cumque tenetur harum facere delectus tempora! Cumque!</li>
+        </ul>
+    <!--Roadmap N2-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, molestiae numquam. Recusandae cupiditate adipisci mollitia praesentium! Quasi at, tempore, consequuntur minus id, voluptas consectetur dolorem sed quaerat quam quibusdam. Dolorem!</p>
+    <div class="consejosN2-2 col-12 col-md-8 col-lg-6"><h4>Roadmap para N2</h4>
+      <p class="consejosN2-2-mayuscula">Mi roadmap</p>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">総まとめN2・文法 ✨</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">総まとめN2・言葉✨</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">総まとめN2・漢字</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">新完全マスターN2・文法 ✨</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">新完全マスターN2・読解 ✨</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">新完全マスターN2・語彙 ✨</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">日本語パワードリル N2 文字・語彙</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">日本語パワードリル N2 文法</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">直線対策N2</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">日本語能力試験 模試と対策 N2</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">短期マスター 日本語能力試験ドリル N2</label>
+      </div>
+      <br>
+        <p><span class="consejosN2-2-mayuscula">Nuevo material:</span> (Los he comprado, no los he usado aun pero tienen buenas referencias)</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">TRY! N2</label>
+        </div>
+      <br>
+        <p class="consejosN2-2-mayuscula">Opcional:</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">book</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">book</label>
+        </div><br>
+        <p><span class="consejosN2-2-minuscula">✨ Minimo recomendado:</span> Libros que aconsejo sean material de estudio principales.</p>
+    </div>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsam laboriosam amet repellat, placeat repudiandae odit velit non quam obcaecati distinctio recusandae ea voluptas provident? Repudiandae distinctio sit laboriosam vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eveniet quod, fuga similique magnam voluptate repudiandae sequi consequuntur repellat, nesciunt voluptates blanditiis perspiciatis numquam dolores nobis minima sed cumque quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed obcaecati non esse cum debitis at quae, veritatis harum deserunt repudiandae quos voluptatum quam, tenetur perferendis rem facilis dolore id possimus?</p>
+      </article>
+      <!-- Consejos N2 -->
+      <article class="align-self-center">
+        <h4>Consejos</h4>
+        <div class="row row-cols-1 row-cols-md-2 g-4 ">
+          <div class="col-12 col-md-6 col-lg-3 consejosN2 hvr-bob">
+            <h5>💡 Consume contenido en japonés sin subs o con sub en japonés</h5>
+            <p>Consumir contenido digital en japonés, ya sea series de anime, doramas o películas Sin Subtitulos o con subs en japonés. Estás en un nivel donde puedes comenzar a entender el contexto y la trama central de la historia.</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 consejosN2-2 hvr-bob">
+            <h5>💡 Aprovecha la apps</h5>
+            <p>Cada vez hay más apps (móvil, tablets, desktop) que te permiten aprender vocabulario y kanji, como por ejemplo Memrise (app y web) o ReadTheKanji (solo sitio web) que te permiten estudiar en cualquier momento libre que tengas. </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 consejosN2 hvr-bob">
+            <h5>💡 Leer manga</h5>
+            <p>En este nivel puedes animarte a elegir mangas con temas específicos y vocabulario desafiante, como un Seinen, un Shonen (por ejemplo Death Note), o practicamente cualquier género de manga que más te guste.</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 consejosN2-2 hvr-bob">
+            <h5>💡 Animate a leer Light Novels y Novelas</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tenetur dicta placeat ullam porro quam maiores laboriosam fugit. Culpa corrupti a repellat ipsum voluptate? Ipsum ab odio cupiditate delectus! Obcaecati!</p>
+          </div>
+        </div>
+      </article>
+    </section>
 
-        <section class="home-section-overview">
-           <h2>Nivel N2</h2>
-            <p>Nivel 2</p>
-        </section>
-      <!-- Sidebar con feed de twitter con updates de la cuenta, a ser replicado en otras paginas -->
-       <div class="contentRight">
-           <h3 class="contentRight_H3">✨ Latest updates ✨</h3>
-           <p>Ultimas actualizaciones en redes sociales</p>
-           <article class="twitterTL">
-               <a class="twitter-timeline" href="https://twitter.com/estudiandojp?ref_src=twsrc%5Etfw">Tweets by estudiandojp</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-           </article>
-       </div>
-       <footer>
-           <p>Todos los derechos reservados por Balducci</p>
-       </footer>
-     </div>
+    <!-- Libros de N2 -->
+    <section class="container">
+      <h3>Material de Estudio</h3>
+      <p>Principalmente utilizé estas tres series de libros. </p>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="../imagenes/imagenesPlaceholder/somatome-n2-amzn.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">総まとめ</h5>
+              <p class="ParrafoMayusculaN2">So Matome</p>
+              <p class="card-text">Una de las series de libros más populares para este nivel. Consta de 5 libros: Gramatica, Vocabulario, Kanji, Lectura y Comprension auditiva.</p>
+              <a href="#" class="btn boton-link-n2 hvr-grow">Review</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../imagenes/imagenesPlaceholder/kanzenmasterN2_cdjapan_kanji.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">新完全マスター</h5>
+              <p class="ParrafoMayusculaN2">Shin Kanzen Master</p>
+              <p class="card-text">Esta serie de libros es tambien una de las más utilizadas. Si So Matome es un "entry level" para N2, Kanzen Master no sólo va mas en detalle sino también eleva la dificultad. Consta de 5 libros: Gramatica, Vocabulario, Kanji, Lectura y Comprension auditiva.</p>
+              <a href="#" class="btn boton-link-n2 hvr-grow">Review</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../imagenes/imagenesPlaceholder/speedmaster-n2-bunpo-amzn.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">スピードマスター</h5>
+              <p class="ParrafoMayusculaN2">Speed Master</p>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <a href="#" class="btn boton-link-n2 hvr-grow">Review</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Material Adicional -->
+<section class="container">
+  <h3>Material Adicional para este nivel</h3>
+  <p>A continuación, material adicional que puede ser usado como referencia, tanto libros con modelos de exámenes, como libros que tratan específicamente kanji, vocabulario, etc. Y libros de texto para un nivel intermedio-avanzado que, aunque no son específicos de N2, contienen contenido útil para este nivel. </p>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/150x200.png?text=Coming+Soon" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Japanese</h5>
+          <p class="ParrafoMayusculaN2">Romaji</p>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <a href="#" class="btn boton-link-n2 hvr-grow">Review</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/150x200.png?text=Coming+Soon" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Japanese</h5>
+          <p class="ParrafoMayusculaN2">Romaji</p>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <a href="#" class="btn boton-link-n2 hvr-grow">Review</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/150x200.png?text=Coming+Soon" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Japanese</h5>
+          <p class="ParrafoMayusculaN2">Romaji</p>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <a href="#" class="btn boton-link-n2 hvr-grow">Review</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Curiosidades -->
+<section class="container">
+  <article>
+    <h6>Curiosidades</h6>
+    <p>El origen del emoji que elegi 🚀 </p>
+    <p>A rocket being propelled into space. Sometimes used to indicate a fast increase, for instance when referring to stocks going to the moon 🚀 (rising quickly in price). Aqui es cuando comenzamos a tomar velocidad, aunque al principio nos parezca que no avanzamos, llega el momento cuando hacemos un 'click' y todo comienza a tener más sentido.
+    </p>
+  </article>
+</section>
+</main>
+<footer>
+    <p>Derechos reservados por Balducci</p>
+    <!-- Iconos 
+<a href="https://www.flaticon.com/free-icons/japan" title="japan icons">Japan icons created by Freepik - Flaticon</a>
+-->
+</footer>
+
+<!-- script de Bootstrap-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

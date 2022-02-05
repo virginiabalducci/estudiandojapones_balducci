@@ -8,38 +8,61 @@
     <!--link css bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <!-- Link Font Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- Link Font Noto Sans Japanese -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Noto+Sans+JP:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <!--link css local-->
-    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./estilos/estilos.css">
 
     <title>Estudiando Japonés</title>
+    <link rel="icon" href="./imagenes/favicon.png">
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand icono" href="index.html"><img src="./imagenes/home/temple.png" class="d-block w-100" alt="Neko Logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./secciones/jlpt.html">JLPT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./secciones/practicarjapones.html">Practicar Japones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="secciones/about.html">Sobre Mi</a>
-              </li>
+   <!-- Nav Bar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand icono" href="index.html"><img src="./imagenes/Home/temple.png" class="d-block w-100" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">JLPT</a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="./secciones/jlpt.html">Introduccion</a></li>
+              <li><a class="dropdown-item" href="./secciones/nivel4-5.html">Nivel 4-5</a></li>
+              <li><a class="dropdown-item" href="./secciones/nivel3.html">Nivel 3</a></li>
+              <li><a class="dropdown-item" href="./secciones/nivel2.html">Nivel 2</a></li>
+              <li><a class="dropdown-item" href="./secciones/nivel1.html">Nivel 1</a></li>
+              <li><a class="dropdown-item" href="./secciones/diccionarios.html">Diccionarios</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="jlpt.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Practicar Japones</a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Leer</a></li>
+              <li><a class="dropdown-item" href="#">Mirar</a></li>
+              <li><a class="dropdown-item" href="#">Escuchar</a></li>
+              <li><a class="dropdown-item" href="#">Viajar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./secciones/about.html">Sobre Mi</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
 
 <main>
@@ -50,8 +73,8 @@
                     <h1>日本語の勉強</h1>
                     <h2>Estudiando Japonés</h2>
                     <div>
-                        <a href="./secciones/jlpt.html" class="btn btn-dark"> JLPT</a>
-                        <a href="./secciones/about.html" class="btn btn-dark">Sobre mi</a>
+                        <a href="./secciones/jlpt.html" class="btn btn-dark hvr-fade"> JLPT</a>
+                        <a href="./secciones/about.html" class="btn btn-dark hvr-fade">Sobre mi</a>
                     </div>
                 </div>
             </article>
@@ -60,24 +83,19 @@
         <section class="container">
             <article class="row">
                 <!-- Primera columna imagen -->
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 align-items-center">
                     <img src="./imagenes/cat-laptop2.png" alt="" class="d-block w-100">
                 </div>
 
                 <!--Segunda columna texto-->
                 <div class="col-12 col-lg-8 HomeSegundaColumnaTexto">
-                    <h2>El idioma Japonés</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Unde provident quibusdam eos inventore, cum nostrum nam!
-                        Labore obcaecati illum cupiditate, nihil ea non deleniti
-                        expedita odit, saepe, similique blanditiis sed?
+                    <h2>Estudiar Japonés</h2>
+                    <p>Dependiendo de tu lengua madre, el estudio de este idioma puede ser mas complicado para algunos. Para los que hablamos español, puede resultar un verdadero reto.
                     </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquam distinctio doloremque
-                        veritatis suscipit neque quibusdam veniam. Nisi perspiciatis fuga illum iusto. Qui quas,
-                        aspernatur totam sint repellat asperiores veniam.
+                    <p>No sólo nos enfrentamos a escritura completamente distinta, con 3 alfabetos: Hiragana, Katakana y Kanji, sino también a una estructura gramatical completamente contraria a la nuestra. 
                     </p>
+                    <p>Otro de los desafios que se nos presentan a los que no vivimos en Japon es la falta de contacto con el idioma en nuestra vida diaria. Por esa razon va a quedar en nosotros el buscar la manera de consumir contenido en idioma japones para generar el habito de la costumbre y practicar un poco a diario.</p>
                 </div>
-
             </article>
         </section>
         <!-- Section Diferentes Maneras de aprender -->
@@ -85,71 +103,70 @@
             <article class="row">
                 <!-- Titulo Para que estudiar Japones-->
                 <div class="col-12 col-lg-12">
-                    <h2>Para que estudiar Japones?</h2>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit nisi ex minus esse eos id fugit enim! Quibusdam accusamus soluta est at illum illo animi minima, mollitia, consequuntur, corporis quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, facere quis quos vero, nobis aliquam provident eveniet saepe nihil commodi velit harum nostrum et asperiores voluptatem perspiciatis placeat sit dignissimos?
+                    <h2>Entonces, ¿cómo estudio?</h2>
+                    <p>No hay una respuesta facil a esta pregunta, creo que cada uno debe ir haciendo su camino en base a lo que nos interesa. Es mucho mas efectivo aprender cuando estamos interesados en algun tema en especial. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit nisi ex minus esse eos id fugit enim! Quibusdam accusamus soluta est at illum illo animi minima, mollitia, consequuntur, corporis quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, facere quis quos vero, nobis aliquam provident eveniet saepe nihil commodi velit harum nostrum et asperiores voluptatem perspiciatis placeat sit dignissimos?
                     </p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nostrum sit voluptatibus facere distinctio rem harum cupiditate corrupti voluptate accusantium velit, quisquam blanditiis veritatis fuga possimus earum a, eaque doloribus!</p>
                 </div>
                 </article>
+                <br>
+                 <!-- Tres columnas con iconos -->
+                <article class="row">
+                    <!-- Primera columna cultura -->
+                    <div class="col-12 col-lg-4 ColumnaIconos">
+                        <div>
+                            <p><strong>Lengua y cultura japonesa</strong></p>
+                            <ul class="intereses d-flex">
+                                <li><img src="./imagenes/home/japanese-gate.png" class="d-block w-100"></li>
+                                <li><img src="./imagenes/home/translation.png" alt="" class="d-block w-100"></li>
+                                <li><img src="./imagenes/home/book.png" alt="" class="d-block w-100"></li>
+                                <li><img src="./imagenes/home/great-buddha.png" alt="" class="d-block w-100"></li>
+                            </ul>
+                            <br>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt quis, consequuntur illo, quam ullam autem est maiores rerum labore laborum iste nihil possimus, fugiat cupiditate. Dignissimos soluta cupiditate nulla?
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Segunda columna Anime manga videojuegos -->
+                    <div class="col-12 col-lg-4 ColumnaIconos">
+                        <div>
+                            <p><strong>Entretenimiento</strong></p>
+                            <ul class="intereses d-flex">
+                                <li><img src="./imagenes/Home/musical-note.png" class="d-block w-100"></li>
+                                <li><img src="./imagenes/home/netflix.png" alt="" class="d-block w-100"></li>
+                                <li><img src="./imagenes/Home/videogames.png" alt="" class="d-block w-100"></li>
+                                <li><img src="./imagenes/home/ghost.png" alt="" class="d-block w-100"></li>
+                            </ul>
+                            <br>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt quis, consequuntur illo, quam ullam autem est maiores rerum labore laborum iste nihil possimus, fugiat cupiditate. Dignissimos soluta cupiditate nulla?
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Tercera columna miscelaneous -->
+                    <div class="col-12 col-lg-4 ColumnaIconos">
+                        <div>
+                            <p><strong>Comida, viajes y mas</strong></p>
+                            <ul class="intereses d-flex">
+                                <li><img src="./imagenes/Home/japanese-food.png" class="d-block w-100"></li>
+                                <li><img src="./imagenes/Home/tokyo-tower.png" alt="" class="d-block w-100"></li>
+                                <li><img src="./imagenes/home/people.png" alt="" class="d-block w-100"></li>
+                                <li><img src="./imagenes/Home/sushi.png" alt="" class="d-block w-100"></li>
+                            </ul>
+                            <br>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt quis, consequuntur illo, quam ullam autem est maiores rerum labore laborum iste nihil possimus, fugiat cupiditate. Dignissimos soluta cupiditate nulla?
+                            </p>
+                        </div>
+                    </div>
+                </article>
         </section>
-        <!-- Tres columnas con iconos -->
+        
         <section class="container">
-            <article class="row">
-                <!-- Primera columna cultura -->
-                <div class="col-12 col-lg-4 ColumnaIconos">
-                    <div>
-                        <p><strong>Lengua y cultura japonesa</strong></p>
-                        <ul class="intereses d-flex">
-                            <li><img src="./imagenes/home/japanese-gate.png" class="d-block w-100"></li>
-                            <li><img src="./imagenes/home/translation.png" alt="" class="d-block w-100"></li>
-                            <li><img src="./imagenes/home/book.png" alt="" class="d-block w-100"></li>
-                            <li><img src="./imagenes/home/great-buddha.png" alt="" class="d-block w-100"></li>
-                        </ul>
-                        <br>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt quis, consequuntur illo, quam ullam autem est maiores rerum labore laborum iste nihil possimus, fugiat cupiditate. Dignissimos soluta cupiditate nulla?
-                        </p>
-                    </div>
-                </div>
-                <!-- Segunda columna Anime manga videojuegos -->
-                <div class="col-12 col-lg-4 ColumnaIconos">
-                    <div>
-                        <p><strong>Entretenimiento</strong></p>
-                        <ul class="intereses d-flex">
-                            <li><img src="./imagenes/Home/musical-note.png" class="d-block w-100"></li>
-                            <li><img src="./imagenes/home/netflix.png" alt="" class="d-block w-100"></li>
-                            <li><img src="./imagenes/Home/videogames.png" alt="" class="d-block w-100"></li>
-                            <li><img src="./imagenes/home/ghost.png" alt="" class="d-block w-100"></li>
-                        </ul>
-                        <br>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt quis, consequuntur illo, quam ullam autem est maiores rerum labore laborum iste nihil possimus, fugiat cupiditate. Dignissimos soluta cupiditate nulla?
-                        </p>
-                    </div>
-                </div>
-                <!-- Tercera columna miscelaneous -->
-                <div class="col-12 col-lg-4 ColumnaIconos">
-                    <div>
-                        <p><strong>Comida, viajes y mas</strong></p>
-                        <ul class="intereses d-flex">
-                            <li><img src="./imagenes/Home/japanese-food.png" class="d-block w-100"></li>
-                            <li><img src="./imagenes/Home/tokyo-tower.png" alt="" class="d-block w-100"></li>
-                            <li><img src="./imagenes/home/people.png" alt="" class="d-block w-100"></li>
-                            <li><img src="./imagenes/Home/sushi.png" alt="" class="d-block w-100"></li>
-                        </ul>
-                        <br>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt quis, consequuntur illo, quam ullam autem est maiores rerum labore laborum iste nihil possimus, fugiat cupiditate. Dignissimos soluta cupiditate nulla?
-                        </p>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="container">
-            <article class="row">
+            <article class="row g-2">
                 <!-- Titulo Para que estudiar Japones-->
-                <div class="col-12 col-lg-12">
+                <div class="col-12 col-lg-12 mapaSitio">
                     <h2>Mapa del sitio</h2>
                     <p>
                         Este sitio esta dividido por dos grandes categorias: JLPT y Aprender Japones. Tecnicamente las dos implican estudio del idioma pero la manera de estudiar es diferente. 
@@ -183,33 +200,27 @@
                                  </ul>
                         </li>
                     </ul>
-                    <ul><p><strong>🧑‍💻 About:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nostrum sit voluptatibus facere distinctio rem harum cupiditate corrupti voluptate accusantium velit, quisquam blanditiis veritatis fuga possimus earum a, eaque doloribus</p></ul>
+                    <ul><p><strong>🧑‍💻 About:</strong> Conoce quién está detrás de esta página.</p></ul>
                 </div>
             </article>
-
-
-
-
-
         </section>
-
-
-
-        
 
         <!-- Seccion Disclaimer -->
         <section class="container disclaimer">
-            <article class="row">
-                <div class="col-12 col-lg-8">
-                    <h2>Disclaimer</h2>
-                    <p>
+            <article class="row g-2">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <h4>Disclaimer ⚠️</h4>
+                    <p class="disclaimerFont"> 
                         Las reviews que comparto son en base a mi experiencia personal utilizando dicho material para estudiar Japonés y de ninguna manera pretendo tener todas las respuestas ni pretendo que este sitio sea tomado como una guía oficial. Espero que mi experiencia te ayude a la hora de elegir el metodo de estudio o libro indicado para ti.
                     </p>
-
-
                 </div>
-                <div class="col-12 col-lg-4">
-                    <img src="./imagenes/imagenesPlaceholder/pexels-karolina-grabowska-4195327.jpg" class="d-block w-100" alt="">
+                <!-- Imagen disclaimer -->
+                <!--
+                <div class="d-flex justify-content-center col-12 col-lg-12">
+                    <div class="imgDisclaimer">
+                        <img src="./imagenes/imagenesPlaceholder/pexels-karolina-grabowska-4195327.jpg" class="d-block w-100" alt="">
+                    </div>
+                -->
                 </div>
             </article>
         </section>
