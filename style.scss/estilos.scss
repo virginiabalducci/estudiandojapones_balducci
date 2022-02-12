@@ -1,6 +1,7 @@
-@import "botones";
-@import "niveles";
-@import "animaciones";
+@import "_sass-dos";
+@import "_botones";
+@import "_niveles";
+@import "_animaciones";
 
 * {
   padding: 0;
@@ -33,12 +34,12 @@ body {
   img {
     max-width: 100%;
   }
-  */
+ 
 
 section {
   padding: 5% 0;
 }
-
+*/
 a {
   text-decoration: none;
   color: #2e2e2e;
@@ -52,7 +53,13 @@ ul {
 .icono {
   width: 50px;
 }
-/* NavBar */
+
+/* Misc */
+
+.card-footerBtn {
+  background: transparent;
+  border-top: 0px;
+}
 
 /*portada*/
 .portada {
@@ -117,41 +124,17 @@ footer {
 }
 
 /* Seccion JLPT */
-
-.columna {
-  margin-bottom: 1.5em;
-}
-
 .portadaJLPT {
-  color: #202020;
-  height: 3em;
-}
-.portadaJLPTparrafo {
-  background-color: whitesmoke;
-  opacity: 2;
-
-  img {
-    width: 100%;
-  }
-}
-
-/*tranparencias*/
-
-.transparencias-contenedor {
   background-image: url("../imagenes/LibrosJapones_overview_small_bright.png");
-  height: 80vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-color: transparent;
+  opacity: 45%;
 }
 
-.colorTransparente {
-  background-color: rgba(239, 247, 248, 0.575);
-}
-
-.JLPTparrafo {
-  padding: 10px;
-  margin-top: 1.5em;
-  font-weight: 700;
-  color: #020202;
+.portadaJLPTparrafo {
+  background-color: whitesmoke;
+  color: black;
+  opacity: 95%;
 }

@@ -1,0 +1,47 @@
+/* ejercicio SASS II */
+
+$ancho-box: 720px;
+$alto-box: 30px;
+$blue: #4285f4;
+$red: rgb(245, 111, 111);
+$colorn4: #faf1a0;
+$green: #68d84c;
+
+.box-uno {
+  background-color: $blue;
+  width: $ancho-box/2;
+  height: $alto-box;
+}
+
+.box-dos {
+  background-color: $green;
+  width: ($ancho-box/2)-50;
+}
+
+/* mixins */
+
+@mixin sizes($ancho-box, $alto-box) {
+  height: $alto-box;
+  width: $ancho-box;
+}
+
+.box {
+  @include sizes(500px, 500px);
+  background-color: $colorn4;
+}
+
+.box2 {
+  @include sizes(100px, 100px);
+  background-color: $green;
+}
+
+/* */
+
+@for $i from 1 through 4 {
+  .prueba-#{$i} {
+    width: 3em * $i;
+    background-color: $blue;
+    border: 1px solid salmon;
+    color: white;
+  }
+}

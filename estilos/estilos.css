@@ -1,3 +1,57 @@
+/* ejercicio SASS II */
+.box-uno {
+  background-color: #4285f4;
+  width: 360px;
+  height: 30px;
+}
+
+.box-dos {
+  background-color: #68d84c;
+  width: 310px;
+}
+
+/* mixins */
+.box {
+  height: 500px;
+  width: 500px;
+  background-color: #faf1a0;
+}
+
+.box2 {
+  height: 100px;
+  width: 100px;
+  background-color: #68d84c;
+}
+
+/* */
+.prueba-1 {
+  width: 3em;
+  background-color: #4285f4;
+  border: 1px solid salmon;
+  color: white;
+}
+
+.prueba-2 {
+  width: 6em;
+  background-color: #4285f4;
+  border: 1px solid salmon;
+  color: white;
+}
+
+.prueba-3 {
+  width: 9em;
+  background-color: #4285f4;
+  border: 1px solid salmon;
+  color: white;
+}
+
+.prueba-4 {
+  width: 12em;
+  background-color: #4285f4;
+  border: 1px solid salmon;
+  color: white;
+}
+
 /* botones cards Niveles */
 .boton-link-n4 {
   padding: 0.5em;
@@ -45,6 +99,10 @@
 }
 
 /* JLPT N4-5 */
+.backgroundN4-5 {
+  background-color: #faf1a0;
+}
+
 .seccionCheckboxNivelesN4-5 {
   background-color: #faf1a0;
   padding: 1.5em;
@@ -601,11 +659,12 @@ body {
   img {
     max-width: 100%;
   }
-  */
+ 
+
 section {
   padding: 5% 0;
 }
-
+*/
 a {
   text-decoration: none;
   color: #2e2e2e;
@@ -620,7 +679,12 @@ ul {
   width: 50px;
 }
 
-/* NavBar */
+/* Misc */
+.card-footerBtn {
+  background: transparent;
+  border-top: 0px;
+}
+
 /*portada*/
 .portada {
   background-image: url("../imagenes/manekineko-mirror.png");
@@ -689,41 +753,18 @@ footerhover {
 }
 
 /* Seccion JLPT */
-.columna {
-  margin-bottom: 1.5em;
-}
-
 .portadaJLPT {
-  color: #202020;
-  height: 3em;
+  background-image: url("../imagenes/LibrosJapones_overview_small_bright.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  opacity: 45%;
 }
 
 .portadaJLPTparrafo {
   background-color: whitesmoke;
-  opacity: 2;
-}
-
-.portadaJLPTparrafo img {
-  width: 100%;
-}
-
-/*tranparencias*/
-.transparencias-contenedor {
-  background-image: url("../imagenes/LibrosJapones_overview_small_bright.png");
-  height: 80vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.colorTransparente {
-  background-color: rgba(239, 247, 248, 0.575);
-}
-
-.JLPTparrafo {
-  padding: 10px;
-  margin-top: 1.5em;
-  font-weight: 700;
-  color: #020202;
+  color: black;
+  opacity: 95%;
 }
 /*# sourceMappingURL=estilos.css.map */
