@@ -1,4 +1,4 @@
-@import "_sass-dos";
+@import "_portadas";
 @import "_botones";
 @import "_niveles";
 @import "_animaciones";
@@ -61,18 +61,6 @@ ul {
   border-top: 0px;
 }
 
-/*portada*/
-.portada {
-  background-image: url("../imagenes/manekineko-mirror.png");
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  article {
-    height: 100%;
-  }
-}
-
 .intereses {
   margin: 0;
   padding: 0;
@@ -123,18 +111,88 @@ footer {
   }
 }
 
-/* Seccion JLPT */
-.portadaJLPT {
-  background-image: url("../imagenes/LibrosJapones_overview_small_bright.png");
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: transparent;
-  opacity: 45%;
+.ul-style {
+  list-style: square;
 }
 
-.portadaJLPTparrafo {
-  background-color: whitesmoke;
-  color: black;
-  opacity: 95%;
+/* Rating Stars */
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+/* Gallery */
+.gallery {
+  padding: 80px 0px;
+
+  img {
+    max-width: 100%;
+    background: #fff;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+}
+
+#gallery-popup {
+  modal-img {
+    width: 100%;
+  }
+}
+
+/* Viajar Grid */
+
+/* Responsive layout - dos columnas */
+@media screen and (max-width: 800px) {
+  .grilla-column {
+    flex: 50%;
+    max-width: 50%;
+    display: inline;
+    img {
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grilla-column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }

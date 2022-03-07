@@ -1,55 +1,265 @@
-/* ejercicio SASS II */
-.box-uno {
-  background-color: #4285f4;
-  width: 360px;
-  height: 30px;
+@charset "UTF-8";
+/*portada*/
+.portada {
+  background-image: url("../imagenes/manekineko-mirror.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.box-dos {
-  background-color: #68d84c;
-  width: 310px;
+.portada article {
+  height: 100%;
 }
 
-/* mixins */
-.box {
-  height: 500px;
-  width: 500px;
-  background-color: #faf1a0;
+.portada-JLPT {
+  background-image: url("../imagenes/portadajlpt.jpeg");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.box2 {
-  height: 100px;
-  width: 100px;
-  background-color: #68d84c;
+.portada-JLPT article {
+  height: 100%;
 }
 
-/* */
-.prueba-1 {
-  width: 3em;
-  background-color: #4285f4;
-  border: 1px solid salmon;
-  color: white;
+.portada-JLPT h1 {
+  color: black;
 }
 
-.prueba-2 {
-  width: 6em;
-  background-color: #4285f4;
-  border: 1px solid salmon;
-  color: white;
+.portada-JLPT leer-tituloTransparente {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.5;
+  display: block;
 }
 
-.prueba-3 {
-  width: 9em;
-  background-color: #4285f4;
-  border: 1px solid salmon;
-  color: white;
+.portada-N4 {
+  background-image: url("../imagenes/portada4.jpeg");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.prueba-4 {
-  width: 12em;
-  background-color: #4285f4;
-  border: 1px solid salmon;
-  color: white;
+.portada-N4 article {
+  height: 100%;
+}
+
+.portada-N4 h1 {
+  color: black;
+}
+
+.portada-N4 leer-tituloTransparente {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.5;
+  display: block;
+}
+
+.portada-N3 {
+  background-image: url("../imagenes/portada3.jpeg");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.portada-N3 article {
+  height: 100%;
+}
+
+.portada-N3 h1 {
+  color: black;
+}
+
+.portada-N3 leer-tituloTransparente {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.5;
+  display: block;
+}
+
+.portada-N2 {
+  background-image: url("../imagenes/portada2.png");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.portada-N2 article {
+  height: 100%;
+}
+
+.portada-N2 h1 {
+  color: black;
+}
+
+.portada-N2 leer-tituloTransparente {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.5;
+  display: block;
+}
+
+.portada-N1 {
+  background-image: url("../imagenes/portada1.jpg");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.portada-N1 article {
+  height: 100%;
+}
+
+.portada-N1 h1 {
+  color: black;
+}
+
+.portada-N1 leer-tituloTransparente {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.5;
+  display: block;
+}
+
+.portada-leer {
+  background-image: url("../imagenes/leer-bookexpress.jpeg");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.portada-leer article {
+  height: 100%;
+}
+
+.portada-leer h1 {
+  color: black;
+}
+
+.portada-leer leer-tituloTransparente {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.5;
+  display: block;
+}
+
+.portada-diccionarios {
+  background-image: url("../imagenes/PortadaDiccionarios.png");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.portada-diccionarios article {
+  height: 100%;
+}
+
+.portada-diccionarios h1 {
+  color: black;
+}
+
+.portada-diccionarios leer-tituloTransparente {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.5;
+  display: block;
+}
+
+.portada-viajar {
+  background-image: url("../imagenes/portada-viajar.jpg");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.portada-viajar article {
+  height: 100%;
+}
+
+.portada-viajar h1 {
+  color: black;
+}
+
+.portada-viajar leer-tituloTransparente {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.5;
+  display: block;
+}
+
+.portada-tecnicas {
+  background-image: url("../imagenes/portada-tecnicas-sm.jpg");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.portada-tecnicas article {
+  height: 100%;
+}
+
+.portada-tecnicas h1 {
+  color: black;
+}
+
+.portada-tecnicas leer-tituloTransparente {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.5;
+  display: block;
+}
+
+.portada-mirar {
+  background-image: url("../imagenes/japanese-doramas.png");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.portada-mirar article {
+  height: 100%;
+}
+
+.portada-mirar h1 {
+  color: black;
+}
+
+.portada-mirar leer-tituloTransparente {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.5;
+  display: block;
 }
 
 /* botones cards Niveles */
@@ -88,6 +298,13 @@
   border-radius: 0.25em;
 }
 
+/* Colores */
+.alert-warningPink {
+  color: #d63384;
+  background-color: #f1dee7;
+  border-color: #d63384;
+}
+
 /* Niveles */
 .listaAptitudesJLPT {
   list-style: square;
@@ -99,12 +316,16 @@
 }
 
 /* JLPT N4-5 */
+.curiosidadesLetra {
+  font-size: 14px;
+}
+
 .backgroundN4-5 {
-  background-color: #faf1a0;
+  background-color: #f8f1ae;
 }
 
 .seccionCheckboxNivelesN4-5 {
-  background-color: #faf1a0;
+  background-color: #f8f1ae;
   padding: 1.5em;
   border-radius: 5%;
   color: #444444;
@@ -155,7 +376,7 @@
 }
 
 .consejosN4-5 {
-  background-color: #faf1a0;
+  background-color: #f8f1ae;
   padding: 1.5em;
   border-radius: 5%;
   color: #444444;
@@ -167,7 +388,7 @@
 }
 
 .consejosN4-5-2 {
-  border: #faf1a0 solid;
+  border: #f8f1ae solid;
   padding: 1.5em;
   border-radius: 5%;
   color: #444444;
@@ -204,7 +425,7 @@
 
 /* JLPT N3 */
 .seccionCheckboxNivelesN3 {
-  background-color: #e9f6f4;
+  background-color: #c7ebbe;
   padding: 1.5em;
   border-radius: 5%;
   color: #444444;
@@ -255,7 +476,7 @@
 }
 
 .consejosN3 {
-  background-color: #e9f6f4;
+  background-color: #c7ebbe;
   padding: 1.5em;
   border-radius: 5%;
   color: #444444;
@@ -267,7 +488,7 @@
 }
 
 .consejosN3-2 {
-  border: #e9f6f4 solid;
+  border: #c7ebbe solid;
   padding: 1.5em;
   border-radius: 5%;
   color: #444444;
@@ -276,6 +497,16 @@
   font-weight: 500;
   line-height: 24px;
   text-align: left;
+}
+
+.consejosN3-2 h4 {
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 33.6px;
+  word-spacing: 0px;
 }
 
 .consejosN3-2-mayuscula {
@@ -481,6 +712,146 @@
   text-align: left;
 }
 
+/* seccion Leer */
+.seccionCheckboxleer {
+  background-color: #e2d4eb;
+  padding: 1.5em;
+  border-radius: 5%;
+  color: #444444;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.seccionCheckboxleer h4 {
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 33.6px;
+  word-spacing: 0px;
+}
+
+.seccionCheckboxleer p {
+  color: #324c7b;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 24px;
+  -webkit-text-decoration: none solid #4c327b;
+  text-decoration: none solid #4c327b;
+  text-transform: uppercase;
+  word-spacing: 0px;
+  text-align: left;
+}
+
+.consejosleer {
+  background-color: #e2d4eb;
+  padding: 1.5em;
+  border-radius: 5%;
+  color: #444444;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.consejosleer-2 {
+  border: #e2d4eb solid;
+  padding: 1.5em;
+  border-radius: 5%;
+  color: #444444;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.consejosleer-2-mayuscula {
+  color: #4c327b;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 24px;
+  -webkit-text-decoration: none solid #4c327b;
+  text-decoration: none solid #4c327b;
+  text-transform: uppercase;
+  word-spacing: 0px;
+  text-align: left;
+}
+
+.consejosleer-2-mayuscula2 {
+  color: #4c327b;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 24px;
+  -webkit-text-decoration: none solid #4c327b;
+  text-decoration: none solid #4c327b;
+  word-spacing: 0px;
+  text-align: left;
+}
+
+.background-leer {
+  background-color: rgba(246, 236, 252, 0.644);
+  border-radius: 5%;
+}
+
+/* Diccionarios */
+.dicc-mayuscula {
+  color: #fa568d;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 24px;
+  -webkit-text-decoration: none solid #4c327b;
+  text-decoration: none solid #4c327b;
+  text-transform: uppercase;
+  word-spacing: 0px;
+  text-align: left;
+}
+
+.dicc-minuscula {
+  color: #fa568d;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 24px;
+  -webkit-text-decoration: none solid #4c327b;
+  text-decoration: none solid #4c327b;
+  text-transform: none;
+  word-spacing: 0px;
+  text-align: left;
+}
+
+/* Diccionarios */
+.BoxReview {
+  background-color: #fdf1e3;
+  border: 1px solid #c9c9c9;
+}
+
+.BoxReview2 {
+  background-color: #fffaf5;
+  border: 1px solid #f7ca50;
+  padding: 10px;
+}
+
+.BoxReview2 p {
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Viajar */
 /* Animaciones */
 /* Fade */
 .hvr-fade {
@@ -685,19 +1056,6 @@ ul {
   border-top: 0px;
 }
 
-/*portada*/
-.portada {
-  background-image: url("../imagenes/manekineko-mirror.png");
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.portada article {
-  height: 100%;
-}
-
 .intereses {
   margin: 0;
   padding: 0;
@@ -752,19 +1110,97 @@ footerhover {
   color: #949494;
 }
 
-/* Seccion JLPT */
-.portadaJLPT {
-  background-image: url("../imagenes/LibrosJapones_overview_small_bright.png");
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: transparent;
-  opacity: 45%;
+.ul-style {
+  list-style: square;
 }
 
-.portadaJLPTparrafo {
-  background-color: whitesmoke;
-  color: black;
-  opacity: 95%;
+/* Rating Stars */
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+/* Gallery */
+.gallery {
+  padding: 80px 0px;
+}
+
+.gallery img {
+  max-width: 100%;
+  background: #fff;
+  padding: 15px;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#gallery-popup modal-img {
+  width: 100%;
+}
+
+/* Viajar Grid */
+/* Responsive layout - dos columnas */
+@media screen and (max-width: 800px) {
+  .grilla-column {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+    display: inline;
+  }
+  .grilla-column img {
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grilla-column {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

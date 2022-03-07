@@ -25,15 +25,12 @@
     <!-- Nav Bar-->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand icono" href="../index.html"><img src="../imagenes/Home/koi-fish.png" class="d-block w-100" alt="Logo"></a>
+            <a class="navbar-brand icono" href="../index.html"><img src="../imagenes/koi-fish.png" class="d-block w-100" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle active" href="jlpt.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">JLPT</a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -48,11 +45,15 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="jlpt.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Practicar Japones</a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Leer</a></li>
-                  <li><a class="dropdown-item" href="#">Mirar</a></li>
-                  <li><a class="dropdown-item" href="#">Escuchar</a></li>
-                  <li><a class="dropdown-item" href="#">Viajar</a></li>
+                  <li><a class="dropdown-item" href="leer.html">Leer Novelas</a></li>
+                  <li><a class="dropdown-item" href="mirar.html">Mirar y Escuchar</a></li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Técnicas de Estudio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="viajar.html">Viajar a Japon</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">Sobre Mi</a>
@@ -64,10 +65,16 @@
     <!-- Fin Nav -->
 </header>
 <main>
-
+ <!-- Portada imagen-->
+ <section class="container-fluid portada-N4">
+  <div class="justify-content-center">
+      <div class="leer-tituloTransparente">
+      </div>
+  </div>
+</section>
  <!-- Portada -->
  <section class="container">
-  <div class="col-12 col-md-12 col-lg-12">
+  <div class="col-12 col-md-12 col-lg-12 mt-3">
     <h2> JLPT N5 - N4  🔰</h2>
     <p>Bienvenido al inicio de tu camino!
     </p>
@@ -77,9 +84,7 @@
     </p>
   </div>
   <!-- Seccion checkboxes-->
-  <article>
-    
-
+  <article class="p-2">
     <div class="seccionCheckboxNivelesN4-5 col-12 col-md-8 col-lg-8">
       <h4>¿Qué necesito para llegar a este nivel?</h4>
         <p>Altamente recomendable:</p>
@@ -105,9 +110,9 @@
             En caso de haber aprobado el nivel N3 habiendo alcanzado el puntaje mínimo recomendable, no estaría mal considerar volver a repasar el nivel y volver a rendirlo nuevamente para poder obtener mejor nota. Esto es totalmente opcional, ya que no cambia el hecho de que el examen haya sido aprobado el haber logrado el puntaje mínimo, pero en estos casos quizás nos falte repasar un poco más este nivel antes de avanzar al siguiente.
         </div>
         
-        <br>
+   
     </div>
-    <br>
+
     <h5>¿Puedo saltarme N5 y avanzar a N4? </h5>
     <p class="JLPTfaq">test
     </p>
@@ -171,9 +176,9 @@
   </article>
   <br>
   <article class="align-self-center">
-    <h4>Consejos</h4>
-    <div class="row row-cols-1 row-cols-md-2 g-4 ">
-      <div class="col-12 col-md-6 col-lg-3 consejosN4-5 hvr-bob">
+    <h4>Consejos!</h4>
+    <div class="row row-cols-1 row-cols-md-2 g-4 p-1">
+      <div class="col-12 col-md-6 col-lg-3 consejosN4-5 hvr-bob ">
         <h5>💡 Consume contenido en japonés con subs</h5>
         <p>Consumir contenido digital en japonés, ya sea series de anime, doramas o películas con subtitulos en español. De esta manera podrás comenzar a acostumbrarte al acento y a identificar frases o palabras cotidianas.</p>
       </div>
@@ -196,12 +201,14 @@
 
 <!-- Libros de N5 -->
 <section class="container">
-  <h3>Material de Estudio</h3>
+  <article class="mt-5">
+    <h3>Material de Estudio</h3>
   <p>Principalmente utilizé estas tres series de libros. </p>
+  </article>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
       <div class="card h-100">
-        <img src="../imagenes/imagenesPlaceholder/minnanonihongo1-amzn.jpg" class="card-img-top" alt="Minna no Nihongo I">
+        <img src="../imagenes/minnanonihongo1-amzn.jpg" class="card-img-top" alt="Minna no Nihongo I">
         <div class="card-body">
           <h5 class="card-title">みんなの日本語I</h5>
           <p class="ParrafoMayusculaN2">Minna no Nihongo I</p>
@@ -215,7 +222,7 @@
     </div>
     <div class="col">
       <div class="card h-100">
-        <img src="../imagenes/imagenesPlaceholder/minnanonihongo2-amzn.jpg" class="card-img-top" alt="Minna no Nihongo II">
+        <img src="../imagenes/minnanonihongo2-amzn.jpg" class="card-img-top" alt="Minna no Nihongo II">
         <div class="card-body">
           <h5 class="card-title">みんなの日本語II</h5>
           <p class="ParrafoMayusculaN2">Minna no Nihongo II</p>
@@ -229,7 +236,7 @@
     </div>
     <div class="col">
       <div class="card h-100">
-        <img src="../imagenes/imagenesPlaceholder/charenjin4-5-amzn.png" class="card-img-top" alt="Challenge N4-5">
+        <img src="../imagenes/charenjin4-5-amzn.png" class="card-img-top" alt="Challenge N4-5">
         <div class="card-body">
           <h5 class="card-title">チャレンジN5-N4</h5>
           <p class="ParrafoMayusculaN2">Challenge</p>
@@ -244,8 +251,8 @@
   </div>  
 </section>
 <!-- Material Adicional -->
-<section class="container">
-  <h3>Material Adicional para este nivel</h3>
+<section class="container mt-5 mb-5">
+  <h4>Material Adicional para este nivel</h4>
   <p>A continuación, material adicional que puede ser usado como referencia, tanto libros con modelos de exámenes, como libros que tratan específicamente kanji, vocabulario, etc. Y libros de texto para un nivel inicial, inicial-avanzado que, aunque no son específicos de N5 o N4, contienen contenido útil para este nivel. </p>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
@@ -296,12 +303,16 @@
 
 
 <!-- Curiosidades -->
-<section class="container">
-  <article>
+<section class="container mt-6 p-3">
+  <article class="mt-6">
     <h6>Curiosidades</h6>
-    <p>El origen del emoji que elegi 🔰 </p>
-    <p>A yellow and green shield symbol, called a Shoshinsha Mark. Must be displayed by drivers in Japan for one year after they receive their drivers licence.
+    <div class="curiosidadesLetra">
+      <p>El origen del emoji que elegi 🔰 </p>
+    <p>Simbolo de un escudo amarillo y verde, llamado Marca Shoshinsha. Tiene que ser mostrado por los conductores en Japon durante un año luego de que reciben su licencia de conducir. No es que uno debe hacer esto mientras esta aprendiendo un lenguage, pero me gusto el concepto de un simbolo para principiantes. Estamos aprendiendo y tenemos que ser consientes de esto, ir avanzando a nuestro ritmo y con orgullo.
     </p>
+    <p>Creditos de imagen <a href="https://www.facebook.com/AllproductsfromJapan/"></a>JapanGoodies</p>
+    </div>
+    
   </article>
 </section>
 

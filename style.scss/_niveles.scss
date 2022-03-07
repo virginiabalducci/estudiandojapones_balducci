@@ -1,4 +1,22 @@
+/* Colores */
+
+$colorN4: #f8f1ae;
+$colorN3: #c7ebbe;
+$colorN2: #fbe6e3;
+$colorN1: #e3f1fb;
+$colorLeer: #eed9fa;
+$colorDicc: #fa568d;
+$colorViajes: #395fda;
+$purple: #6f42c1;
+$pink: #d63384;
+
+.alert-warningPink {
+  color: #d63384;
+  background-color: #f1dee7;
+  border-color: $pink;
+}
 /* Niveles */
+
 .listaAptitudesJLPT {
   list-style: square;
 }
@@ -10,12 +28,16 @@
 
 /* JLPT N4-5 */
 
+.curiosidadesLetra {
+  font-size: 14px;
+}
+
 .backgroundN4-5 {
-  background-color: #faf1a0;
+  background-color: $colorN4;
 }
 
 .seccionCheckboxNivelesN4-5 {
-  background-color: #faf1a0;
+  background-color: $colorN4;
   padding: 1.5em;
   border-radius: 5%;
   color: #444444;
@@ -66,7 +88,7 @@
 }
 
 .consejosN4-5 {
-  background-color: #faf1a0;
+  background-color: $colorN4;
   padding: 1.5em;
   border-radius: 5%;
   color: #444444;
@@ -78,7 +100,7 @@
 }
 
 .consejosN4-5-2 {
-  border: #faf1a0 solid;
+  border: $colorN4 solid;
   padding: 1.5em;
   border-radius: 5%;
   color: #444444;
@@ -115,7 +137,7 @@
 
 /* JLPT N3 */
 .seccionCheckboxNivelesN3 {
-  background-color: #e9f6f4;
+  background-color: $colorN3;
   padding: 1.5em;
   border-radius: 5%;
   color: #444444;
@@ -166,7 +188,7 @@
 }
 
 .consejosN3 {
-  background-color: #e9f6f4;
+  background-color: $colorN3;
   padding: 1.5em;
   border-radius: 5%;
   color: #444444;
@@ -178,7 +200,7 @@
 }
 
 .consejosN3-2 {
-  border: #e9f6f4 solid;
+  border: $colorN3 solid;
   padding: 1.5em;
   border-radius: 5%;
   color: #444444;
@@ -189,6 +211,15 @@
   text-align: left;
 }
 
+.consejosN3-2 h4 {
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 33.6px;
+  word-spacing: 0px;
+}
 .consejosN3-2-mayuscula {
   color: #327b70;
   font-family: "Noto Sans Japanese", sans-serif;
@@ -391,3 +422,144 @@
   word-spacing: 0px;
   text-align: left;
 }
+
+/* seccion Leer */
+.seccionCheckboxleer {
+  background-color: #e2d4eb;
+  padding: 1.5em;
+  border-radius: 5%;
+  color: #444444;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.seccionCheckboxleer h4 {
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 33.6px;
+  word-spacing: 0px;
+}
+
+.seccionCheckboxleer p {
+  color: #324c7b;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 24px;
+  -webkit-text-decoration: none solid #4c327b;
+  text-decoration: none solid #4c327b;
+  text-transform: uppercase;
+  word-spacing: 0px;
+  text-align: left;
+}
+
+.consejosleer {
+  background-color: #e2d4eb;
+  padding: 1.5em;
+  border-radius: 5%;
+  color: #444444;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.consejosleer-2 {
+  border: #e2d4eb solid;
+  padding: 1.5em;
+  border-radius: 5%;
+  color: #444444;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.consejosleer-2-mayuscula {
+  color: #4c327b;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 24px;
+  -webkit-text-decoration: none solid #4c327b;
+  text-decoration: none solid #4c327b;
+  text-transform: uppercase;
+  word-spacing: 0px;
+  text-align: left;
+}
+
+.consejosleer-2-mayuscula2 {
+  color: #4c327b;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 24px;
+  -webkit-text-decoration: none solid #4c327b;
+  text-decoration: none solid #4c327b;
+  word-spacing: 0px;
+  text-align: left;
+}
+
+.background-leer {
+  background-color: rgba(246, 236, 252, 0.644);
+  border-radius: 5%;
+}
+
+/* Diccionarios */
+
+.dicc-mayuscula {
+  color: $colorDicc;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 24px;
+  -webkit-text-decoration: none solid #4c327b;
+  text-decoration: none solid #4c327b;
+  text-transform: uppercase;
+  word-spacing: 0px;
+  text-align: left;
+}
+
+.dicc-minuscula {
+  color: $colorDicc;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 24px;
+  -webkit-text-decoration: none solid #4c327b;
+  text-decoration: none solid #4c327b;
+  text-transform: none;
+  word-spacing: 0px;
+  text-align: left;
+}
+
+/* Diccionarios */
+.BoxReview {
+  background-color: rgb(253, 241, 227);
+  border: 1px solid rgb(201, 201, 201);
+}
+
+.BoxReview2 {
+  background-color: rgb(255, 250, 245);
+  border: 1px solid rgb(247, 202, 80);
+  padding: 10px;
+  p {
+    font-size: 15px;
+    margin: 0;
+  }
+}
+
+/* Viajar */

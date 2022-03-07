@@ -25,15 +25,12 @@
     <!-- Nav Bar-->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand icono" href="../index.html"><img src="../imagenes/Home/tokyo-tower.png" class="d-block w-100" alt="Logo"></a>
+            <a class="navbar-brand icono" href="../index.html"><img src="../imagenes/tokyo-tower.png" class="d-block w-100" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle active" href="jlpt.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">JLPT</a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -46,13 +43,17 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="jlpt.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Practicar Japones</a>
+                <a class="nav-link dropdown-toggle" href="" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Practicar Japones</a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Leer</a></li>
-                  <li><a class="dropdown-item" href="#">Mirar</a></li>
-                  <li><a class="dropdown-item" href="#">Escuchar</a></li>
-                  <li><a class="dropdown-item" href="#">Viajar</a></li>
+                  <li><a class="dropdown-item" href="leer.html">Leer</a></li>
+                  <li><a class="dropdown-item" href="mirar.html">Mirar y Escuchar</a></li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Técnicas de Estudio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="viajar.html">Viajar a Japon</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">Sobre Mi</a>
@@ -64,8 +65,15 @@
     <!-- Fin Nav -->
 </header>
 <main>
+  <!-- Portada -->
+  <section class="container-fluid portada-N2">
+    <div class="justify-content-center">
+        <div class="leer-tituloTransparente">
+        </div>
+    </div>
+ </section>
      <!-- Portada -->
-     <section class="container">
+     <section class="container mt-5">
       <div class="col-12 col-md-12 col-lg-12">
         <h2> JLPT N2 🚀</h2>
         <p>Felicitaciones por haber llegado aqui! Si N3 te ha parecido dificil, asegurate de que tengas ese contenido fresco y entendido, porque con N2 todo comienza a mezclarse, verás muchas más maneras distintas para decir lo mismo, y hasta tener 5 palabras en japones que en español significan lo mismo, pero que en Japonés cada una tiene su significado y uso en determinada situación.
@@ -221,13 +229,13 @@
     </section>
 
     <!-- Libros de N2 -->
-    <section class="container">
+    <section class="container mt-5">
       <h3>Material de Estudio</h3>
       <p>Principalmente utilizé estas tres series de libros. </p>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
-            <img src="../imagenes/imagenesPlaceholder/somatome-n2-amzn.png" class="card-img-top" alt="...">
+            <img src="../imagenes/somatome-n2-amzn.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">総まとめ</h5>
               <p class="ParrafoMayusculaN2">So Matome</p>
@@ -241,7 +249,7 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="../imagenes/imagenesPlaceholder/kanzenmasterN2_cdjapan_kanji.jpeg" class="card-img-top" alt="...">
+            <img src="../imagenes/kanzenmasterN2_cdjapan_kanji.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">新完全マスター</h5>
               <p class="ParrafoMayusculaN2">Shin Kanzen Master</p>
@@ -255,7 +263,7 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="../imagenes/imagenesPlaceholder/speedmaster-n2-bunpo-amzn.jpg" class="card-img-top" alt="...">
+            <img src="../imagenes/speedmaster-n2-bunpo-amzn.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">スピードマスター</h5>
               <p class="ParrafoMayusculaN2">Speed Master</p>
@@ -270,7 +278,7 @@
       </div>
     </section>
 <!-- Material Adicional -->
-<section class="container">
+<section class="container mt-5">
   <h3>Material Adicional para este nivel</h3>
   <p>A continuación, material adicional que puede ser usado como referencia, tanto libros con modelos de exámenes, como libros que tratan específicamente kanji, vocabulario, etc. Y libros de texto para un nivel intermedio-avanzado que, aunque no son específicos de N2, contienen contenido útil para este nivel. </p>
   <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -319,12 +327,14 @@
   </div>
 </section>
 <!-- Curiosidades -->
-<section class="container">
+<section class="container mt-5">
   <article>
     <h6>Curiosidades</h6>
-    <p>El origen del emoji que elegi 🚀 </p>
-    <p>A rocket being propelled into space. Sometimes used to indicate a fast increase, for instance when referring to stocks going to the moon 🚀 (rising quickly in price). Aqui es cuando comenzamos a tomar velocidad, aunque al principio nos parezca que no avanzamos, llega el momento cuando hacemos un 'click' y todo comienza a tener más sentido.
+    <div class="curiosidadesLetra">
+      <p>El origen del emoji que elegi 🚀 </p>
+    <p> Aqui es cuando comenzamos a tomar velocidad, aunque al principio nos parezca que no avanzamos, llega el momento cuando hacemos un 'click' y todo comienza a tener más sentido.
     </p>
+    </div>
   </article>
 </section>
 </main>

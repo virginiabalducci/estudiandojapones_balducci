@@ -23,15 +23,12 @@
     <!-- Nav Bar-->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand icono" href="../index.html"><img src="../imagenes/Home/omamori.png" class="d-block w-100" alt=""></a>
+            <a class="navbar-brand icono" href="../index.html"><img src="../imagenes/omamori.png" class="d-block w-100" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle active" href="jlpt.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">JLPT</a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -46,11 +43,15 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="jlpt.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Practicar Japones</a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Leer</a></li>
-                  <li><a class="dropdown-item" href="#">Mirar</a></li>
-                  <li><a class="dropdown-item" href="#">Escuchar</a></li>
-                  <li><a class="dropdown-item" href="#">Viajar</a></li>
+                  <li><a class="dropdown-item" href="leer.html">Leer</a></li>
+                  <li><a class="dropdown-item" href="mirar.html">Mirar y Escuchar</a></li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Técnicas de Estudio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="viajar.html">Viajar a Japon</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">Sobre Mi</a>
@@ -62,9 +63,16 @@
     <!-- Fin Nav -->
 </header>
 <main>
+   <!-- Portada imagen-->
+   <section class="container-fluid portada-N3">
+    <div class="justify-content-center">
+        <div class="leer-tituloTransparente">
+        </div>
+    </div>
+ </section>
         <!-- Portada -->
         <section class="container">
-          <div class="col-12 col-md-12 col-lg-12">
+          <div class="col-12 col-md-12 col-lg-12 mt-5">
             <h2>JLPT N3 ✨</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Unde provident quibusdasm eos inventore, cum nostrum nam!
@@ -77,8 +85,8 @@
             </p>
           </div>
           <!-- Seccion checkboxes-->
-          <article class="">
-            <div class="seccionCheckboxNivelesN3 col-12 col-md-8 col-lg-6">
+          <article class="p-2">
+            <div class="seccionCheckboxNivelesN3 col-12 col-md-8 col-lg-8">
               <h4>¿Qué necesito para llegar a este nivel? </h4>
               <br>
                 <p>Altamente recomendable:</p>
@@ -217,12 +225,14 @@
 
         <!-- Libros de N3 -->
         <section class="container">
-          <h3>Material de Estudio</h3>
+          <article class="mt-5"> 
+            <h3>Material de Estudio</h3>
           <p>Principalmente utilizé estas tres series de libros. </p>
+          </article>
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100">
-                <img src="../imagenes/imagenesPlaceholder/somatome-n3-bumpo.jpeg" class="card-img-top" alt="So Matome N3">
+                <img src="../imagenes/somatome-n3-bumpo.jpeg" class="card-img-top" alt="So Matome N3">
                 <div class="card-body">
                   <h5 class="card-title">総まとめ</h5>
                   <p class="ParrafoMayusculaN3">So Matome</p>
@@ -236,7 +246,7 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="../imagenes/imagenesPlaceholder/kanzenmaster-n3-bunpo.png" class="card-img-top" alt="Kanzen Master N3">
+                <img src="../imagenes/kanzenmaster-n3-bunpo.png" class="card-img-top" alt="Kanzen Master N3">
                 <div class="card-body">
                   <h5 class="card-title">新完全マスター</h5>
                   <p class="ParrafoMayusculaN3">Shin Kanzen Master</p>
@@ -250,7 +260,7 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="../imagenes/imagenesPlaceholder/speedmaster-n3.jpeg" class="card-img-top" alt="Speed Master N3">
+                <img src="../imagenes/speedmaster-n3.jpeg" class="card-img-top" alt="Speed Master N3">
                 <div class="card-body">
                   <h5 class="card-title">スピードマスター</h5>
                   <p class="ParrafoMayusculaN3">Speed Master</p>
@@ -266,9 +276,12 @@
         </section>
 <!-- Material Adicional -->
 <section class="container">
-  <h3>Material Adicional para este nivel</h3>
+  <article class="mt-5">
+    <h4>Material Adicional para este nivel</h4>
   <p>A continuación, material adicional que puede ser usado como referencia, tanto libros con modelos de exámenes, como libros que tratan específicamente kanji, vocabulario, etc. Y libros de texto para un nivel intermedio-avanzado que, aunque no son específicos de N1, contienen contenido útil para este nivel. </p>
-  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+  </article>
+  <div class="row row-cols-1 row-cols-md-3 mb-5 g-4">
     <div class="col">
       <div class="card h-100">
         <img src="https://via.placeholder.com/150x200.png?text=Coming+Soon" class="card-img-top" alt="...">
@@ -315,12 +328,15 @@
 </section>
 <!-- Fin Material Adicional -->
 <!-- Curiosidades -->
-<section class="container">
+<section class="container p-3">
   <article>
     <h6>Curiosidades</h6>
-    <p>El origen del emoji que elegi ✨ </p>
+    <div class="curiosidadesLetra">
+      <p>El origen del emoji que elegi ✨ </p>
     <p>Commonly used to indicate various positive sentiments, including love, happiness, beauty, gratitude, and excitement, as well as newness or cleanliness. En N3 se comienza a pulir el idioma.
     </p>
+    <p>Imagen de portada es de mlcjapanese</p>
+    </div>
   </article>
 </section>
 </main>

@@ -21,15 +21,12 @@
     <!-- Nav Bar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand icono" href="../index.html"><img src="../imagenes/Home/fuji.png" class="d-block w-100" alt="Logo"></a>
+            <a class="navbar-brand icono" href="../index.html"><img src="../imagenes/fuji.png" class="d-block w-100" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle active" href="jlpt.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">JLPT</a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -42,13 +39,17 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="jlpt.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Practicar Japones</a>
+                <a class="nav-link dropdown-toggle" href="" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Practicar Japones</a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Leer</a></li>
-                  <li><a class="dropdown-item" href="#">Mirar</a></li>
-                  <li><a class="dropdown-item" href="#">Escuchar</a></li>
-                  <li><a class="dropdown-item" href="#">Viajar</a></li>
+                  <li><a class="dropdown-item" href="leer.html">Leer</a></li>
+                  <li><a class="dropdown-item" href="mirar.html">Mirar y Escuchar</a></li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Técnicas de Estudio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="viajar.html">Viajar a Japon</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">Sobre Mi</a>
@@ -60,8 +61,15 @@
 </header>
 
 <main>
+   <!-- Portada imagen-->
+   <section class="container-fluid portada-N1">
+    <div class="justify-content-center">
+        <div class="leer-tituloTransparente">
+        </div>
+    </div>
+ </section>
  <!-- Portada -->
- <section class="container">
+ <section class="container mt-5">
   <div class="col-12 col-md-12 col-lg-12">
     <h2> JLPT N1 💮 </h2>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio fugiat fugit voluptates ducimus consequuntur quia aut alias earum adipisci ullam, deleniti itaque omnis, corporis impedit nulla, distinctio aperiam. Rerum, molestiae.
@@ -196,13 +204,13 @@
 </section>
 
 <!-- Libros de N1 -->
-<section class="container">
+<section class="container mt-5">
   <h3>Material de Estudio</h3>
   <p>Principalmente utilizo estos libros. </p>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
       <div class="card h-100">
-        <img src="../imagenes/imagenesPlaceholder/somatome-n1-amzn.jpg" class="card-img-top" alt="...">
+        <img src="../imagenes/somatome-n1-amzn.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">総まとめ</h5>
           <p class="ParrafoMayusculaN2">So Matome</p>
@@ -216,7 +224,7 @@
     </div>
     <div class="col">
       <div class="card h-100">
-        <img src="../imagenes/imagenesPlaceholder/kanzenmaster-n1-amzn.png" class="card-img-top" alt="...">
+        <img src="../imagenes/kanzenmaster-n1-amzn.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">新完全マスター</h5>
           <p class="ParrafoMayusculaN2">Shin Kanzen Master</p>
@@ -230,7 +238,7 @@
     </div>
     <div class="col">
       <div class="card h-100">
-        <img src="../imagenes/imagenesPlaceholder/try-n1-amzn.jpg" class="card-img-top" alt="...">
+        <img src="../imagenes/try-n1-amzn.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">TRY!日本語能力試験文法から伸ばす日本語</h5>
           <p class="ParrafoMayusculaN2">TRY! Nihongo Noryoku Shiken Bunpo kara nobasu nihongo</p>
@@ -245,8 +253,8 @@
   </div>
 </section>
 <!-- Material Adicional -->
-<section class="container">
-  <h3>Material Adicional para este nivel</h3>
+<section class="container mt-5 mb-5">
+  <h4>Material Adicional para este nivel</h4>
   <p>A continuación, material adicional que puede ser usado como referencia, tanto libros con modelos de exámenes, como libros que tratan específicamente kanji, vocabulario, etc. Y libros de texto para un nivel avanzado que, aunque no son específicos de N1, contienen contenido útil para este nivel. </p>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
@@ -295,12 +303,15 @@
 </section>
 <!-- Fin Material Adicional -->
 <!-- Curiosidades -->
-<section class="container">
+<section class="container p-3">
   <article>
     <h6>Curiosidades</h6>
-    <p>El origen del emoji que elegi 💮 </p>
+    <div class="curiosidadesLetra">
+      <p>El origen del emoji que elegi 💮 </p>
     <p>A stylized white flower. Generally depicted as a rosette-shaped cherry blossom in pink or red outline, often with a white fill. </p>
     <p>Apple, Microsoft, WhatsApp, and Facebook's designs feature Japanese characters roughly translating to very well done, used by teachers as a stamp for students who did exceptional work, often accompanied by a score in red.</p>
+    <p>Creditos de la imagen <a href="https://antoniotajuelo.com/en/a-day-in-tokyo-3/jlpt-n1-books">https://antoniotajuelo.com/en/a-day-in-tokyo-3/jlpt-n1-books</a></p>
+    </div>
   </article>
 </section>
 </main>

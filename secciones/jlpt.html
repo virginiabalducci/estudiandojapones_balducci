@@ -28,15 +28,12 @@
     <!-- Nav Bar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-          <a class="navbar-brand icono" href="../index.html"><img src="../imagenes/Home/cherry-blossom.png" class="d-block w-100" alt="Logo"></a>
+          <a class="navbar-brand icono" href="../index.html"><img src="../imagenes/cherry-blossom.png" class="d-block w-100" alt="Logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle active" href="jlpt.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">JLPT</a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -51,12 +48,17 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="jlpt.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Practicar Japones</a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Leer</a></li>
-                <li><a class="dropdown-item" href="#">Mirar</a></li>
-                <li><a class="dropdown-item" href="#">Escuchar</a></li>
-                <li><a class="dropdown-item" href="#">Viajar</a></li>
+                <li><a class="dropdown-item" href="leer.html">Leer</a></li>
+                <li><a class="dropdown-item" href="mirar.html">Mirar y Escuchar</a></li>
               </ul>
             </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tecnicas.html">Técnicas de Estudio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="viajar.html">Viajar a Japon</a>
+          </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">Sobre Mi</a>
             </li>
@@ -67,42 +69,168 @@
      <!-- Fin Nav -->
 </header>
 <main>
+  <!-- Portada imagen -->
+  <section class="container-fluid portada-JLPT">
+    <div class="justify-content-center">
+        <div class="leer-tituloTransparente">
+        </div>
+    </div>
+ </section>
         <!-- Portada -->
         <section class="container-fluid">
-          <article class="row portadaJLPTparrafo">
-            <div class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+          <article class="row">
+            <div class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center mt-5 mb-5">
               <h1>日本語能力試験</h1>
               <h2>JLPT</h2>
-              <img src="../imagenes/JLPT_sm.jpeg" alt="" class="img-fluid">
           </div>
-          <div class="col-12 col-md-6 col-lg-6 p-5">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae dicta sed, est a, qui, reiciendis corrupti ex unde eum nisi quidem exercitationem dolorum modi. Ipsa amet perferendis voluptatem et tempore!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo architecto eius expedita, voluptas illum nulla laboriosam illo quidem quaerat repellendus ullam deserunt laudantium tenetur quos soluta veniam sint eos nesciunt? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non iste quibusdam doloremque soluta sit explicabo debitis quo tenetur doloribus, qui nihil inventore minus delectus similique est maxime odio magnam fugit!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem at quasi repellendus distinctio a reprehenderit, totam sit aperiam doloribus! Necessitatibus soluta repellendus aspernatur laborum adipisci minus officia dignissimos quo?</p>
+          <div class="col-12 col-md-6 col-lg-6 p-5 mt-5 mb-5 mt-5">
+            <p>El JLPT (Japanese Language Proficiency Test), o también conocido en español como el Noken (por Noryoku Shiken), es un examen de japonés para extranjeros que sirve para certificar el nivel de japonés general. Este examen se toma como referencia a nivel mundial, y lo realiza la Japan Foundation, el organismo encargado de regular la enseñanza del japonés para extranjeros en todo el mundo. </p>
+            <p>A diferencia de exámenes internacionales de otros idiomas, como por ejemplo los de inglés, el JLPT no evalúa la expresión oral o de conversación, ni tampoco la habilidad para hacer una composición escrita sobre un tema. La falta de estas evaluaciones hacen que el JLPT no sea un examen perfecto, por esta razón puedes encontrarte con gente que a pesar de haber aprobado el nivel más alto no sepa expresarse al hablar o escribir correctamente. </p>
           </div>
       </article>
       </section>
+      <!-- Explicacion -->
+      <section class="container background-leer">
+        <article class="row">
+          <div class="col-12 col-md-6 col-lg-6 d-flex flex-column mt-5 mb-4">
+          <h4 class="p-2">Las habilidades que evalúa el JLPT son las siguientes: </h4>
+          <ul class="ul-style p-4">
+            <li class="mt-2"><strong>読解 Lectura: </strong> hay multitud de textos, de diferentes tamaños, donde se nos harán preguntas para evaluar la comprensión lectora. Suele ser una de las secciones más dificiles del test, sobre todo en los niveles mas altos.</li>
+            <li class="mt-2"><strong>文法 Gramática: </strong>ejercicios diferentes para evaluar si somos capaces de comprender cómo funcionan las reglas del idioma.</li>
+            <li class="mt-2"><strong>語彙 Vocabulario: </strong>Se evaluará el vocabulario y la capacidad que tenemos de comprender palabras en un texto.</li>
+            <li class="mt-2"><strong>漢字 Kanji: </strong>esta es otra de las partes complicadas del examen. Aunque al principio son pocos (alrededor de 100), en cada nivel el número de kanjis se va incrementando considerablemente, y para los niveles más altos es probable que te encuentres con palabras en kanji que nunca has visto en tu vida.</li>
+            <li class="mt-2"><strong>聴解 Audio: </strong>suele ser la última parte del examen y es bastante complicada comparándola con otros idiomas, ya que no se nos permite ver las preguntas (tendremos que comprenderlas también) ni las diferentes opciones con las que contamos. El audio se pone una única vez y todos los ejercicios son seguidos.</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 p-5 mt-5 mb-5 mt-5 justify-content-center align-self-center">
+          <img src="../imagenes/JLPT_sm.jpeg" class="img-fluid" alt="JLPT N4 certificado">
+        </div>
+        </article>
+        </section>
+        <!-- Para Que Sirve -->
+        <section class="container mt-5">
+          <article class="align-self-center">
+            <h4>¿Para qué sirve el JLPT?</h4>
+            <div class="row row-cols-1 row-cols-md-2 g-4 ">
+              <div class="col-12 col-md-6 col-lg-4 consejosleer hvr-bob">
+                <h5>Certificacion de nivel</h5>
+                <p>Sirve para certificar tu nivel de japonés ante una universidad, embajada u otra organización oficial. Si necesitas pedir una beca para ir a Japón a estudiar, seguramente te pidan este examen. Para las becas donde no es obligatorio, siempre suma puntos porque demuestras interés por el idioma y que al ya tener conocimiento del mismo, te cueste menos adaptarte que alguien que no sabe japonés.
+                </p>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 consejosleer-2 hvr-bob">
+                <h5>Trabajar</h5>
+                <p>Pueden requerírtelo para trabajar en Japón. Si estás pensando en ir a trabajar a Japón a una empresa japonesa, probablemente te requieran saber japonés a nivel intermedio (al menos) y tener una titulación oficial que lo certifique. Los niveles más solicitados son N2 y por supuesto, N1. Puede que haya algunos trabajos que pida de N3 en adelante.
+                </p>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 consejosleer hvr-bob">
+                <h5>Medir tu nivel</h5>
+                <p>Puedes tomártelo como un reto personal. Hay muchos alumnos que se presentan al examen aunque no van a ir a Japón simplemente por ver su progreso con el idioma. Puede servirte como un objetivo que te puedes fijar para obligarte a avanzar en el idioma.
+                </p>
+              </div>
+            </div>
+            <p class="mt-5">Según la encuesta recolectada de las aplicaciones al JLPT (en total, 324.241 de aplicantes en todo el mundo), se puede ver que: </p>
+            <ul class="ul-style">
+              <li class="mt-2">Un 33.2% contestó que su principal objetivo es medir su propio nivel de conocimiento.</li>
+              <li class="mt-2">23.1% que quiere rendir el examen porque les es útil para su trabajo o les será útil para conseguir empleo, aumento de sueldo o subir de cargo en su país.</li>
+              <li class="mt-2">Un 10.3% lo rinde para conseguir trabajo o subir de cargo en un empleo en Japón.</li>
+              <li class="mt-2">10.0% porque es necesario para ingresar a una universidad en Japón.</li>
+              <li class="mt-2">7.5% porque lo necesita para ingresar a una universidad en su país.</li>
+              <li class="mt-2">4.6% lo necesita para ingresar a otra institución educativa en su propio país, o como prueba de conocimiento.</li>
+              <li class="mt-2">4.5% lo necesita para ingresar a otra institución educativa en Japón, o como prueba de conocimiento.</li>
+            </ul>
+          </article>
+
+        </section>
+        <section class="container d-flex d-flex align-items-center justify-content-center">
+          <img src="../imagenes/jlpt-index_graph03_2018.gif" class="img-fluid" alt="">
+        </section>
+        <section class="container mt-5">
+          <h4>¿Por qué es tan importante tener el JLPT para trabajar en Japón?</h4>
+          <p>Esta informacion es compilada tomando como base <a href="https://jobsinjapan.com/"></a>Jobsinjapan</p>
+          <p>El examen es igual para todos los estudiantes, no importa cual sea su lengua materna. Como es un test estandarizado, muchos empleadores lo ven como una manera fácil para medir las habilidades de japonés de un candidato extranjero. Por más que el test tiene sus fallas que comente más arriba, hay que tener bastante preparación para poder aprobarlo, por lo que puede ser un filtro confiable para los empleadores. Obtener una certificación va a darte más chance de encontrar trabajo en Japón, ya que si ese es tu objetivo, valdrá la pena el esfuerzo.
+          </p>
+          <h5>¿A qué nivel del JLPT debo apuntar?</h5>
+          <p>El examen tiene 5 niveles, que va del más fácil, N5, al más difícil, N1.</p>
+          <ul>
+            <li class="ul-style">N5 y N4 no son considerados como suficientes para trabajar en Japón, pero si tienes suerte podrás encontrar pocos trabajos que requieren por lo menos N4, en industrias relacionadas al turismo o alimentos.</li>
+            <li class="ul-style">N3 implica que tienes habilidad conversacional en Japonés, y muchos restaurantes en Japón establecen este nivel requerido como mínimo. Igualmente, muchas empresas de tecnología últimamente están también agregándolo a sus requerimientos.</li>
+            <li class="ul-style">N2 es a veces visto como el “business level”, y es el nivel requerido por la mayoría de los empleos para extranjeros. Sin embargo, que hayas aprobado el N2 no significa que seas un experto, aunque podrás mantener conversaciones , leer emails y documentos con la ayuda de un diccionario. Lo más importante es que le demuestre a los empleadores que tienes la paciencia y aptitud para el idioma, porque a largo plazo ellos esperan que tus habilidades de japonés mejoren aún más.
+            </li>
+            <li class="ul-style">Finalmente, N1 es el nivel más alto, pero cubre estructuras de lenguaje más académicas que muchos empleadores no ven tan importantes. Según JobsinJapan, obtener esta acreditación se verá bien en tu curriculum, pero la mayoría de los empleadores no la utilizara como filtro a tu favor. A excepción de trabajos de traducción e interpretación, aunque estos probablemente listen este requerimiento como un chequeo de nivel y prefieran evaluar tus habilidades con un examen o entrevista.
+            </li>
+          </ul>
+          <p>Por eso, JobsinJapan concluye que, si tu objetivo es trabajar en Japón, obtener la certificación N2 es un gran paso. Además, lo bueno es que no necesitas obtener las certificaciones previas antes de probar rendir N2, por lo que puedes estudiar a tu propio ritmo y rendir el N2 cuando estés seguro.
+          </p>
+          <h5>¿Cuándo se rinde el examen?</h5>
+          <p>Dependiendo del país, hay 2 convocatorias al año (julio y diciembre) y hay que matricularse con varios meses de antelación. Dependiendo de la fecha, se hace en una escuela grande o universidad. Por ejemplo en Argentina, se solía realizar solo en Diciembre, pero hace un par de años se agregó la fecha de Julio.</p>
+          <p>En Argentina, las inscripciones son manejadas por <a href="https://www.instagram.com/kyoren_argentina/">Kyoren</a> (Centro de Cultura e Idioma Japonés en la Argentina) y abren unos meses antes de cada examen. Por ejemplo en Agosto suelen abrir inscripciones para el examen de Diciembre. Conviene apurarse porque los cupos están contados y limitados, posiblemente debido al espacio que tengan disponible en el colegio donde se rinde, por lo que suelen agotarse rápidamente. 
+          </p>
+        </section>
+        <section class="container mt-5">
+          <h3>Consideraciones y observaciones sobre el JLPT</h3>
+          <p>A diferencia de exámenes internacionales de otros idiomas, como por ejemplo los de inglés, el JLPT no evalúa la expresión oral o de conversación, ni tampoco la habilidad para hacer una composición escrita sobre un tema. La falta de estas evaluaciones hacen que el JLPT no sea un examen perfecto, por esta razón puedes encontrarte con gente que a pesar de haber aprobado el nivel más alto no sepa expresarse al hablar o escribir correctamente.</p>
+          <!-- Seccion checkboxes-->
+        <article class="p-2">
+          <div class="seccionCheckboxleer col-12 col-md-8 col-lg-8">
+            <h4>Algunos consejos</h4>
+              <p>Establecer Expectativas</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  No tomar el JLPT como el medidor absoluto de tu nivel de Japonés. Este es un idioma muy complejo, con diferentes formas de dirigirte a determinadas personas (mayores a tí, menores, jefes, gente de diferentes estatus sociales), muchísimo vocabulario y expresiones idiomáticas o que para entenderlas se necesita llegar a comprender un determinado nivel de cultura. 
+                </label>
+              </div>
+            <br>
+              <p>Desaprobar el examen</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Aprende a aceptar tu nota, si desapruebas no te desanimes. Se dice que cada año, aumenta la cantidad de gente que rinde el examen por lo que la dificultad también aumenta. Analiza tus calificaciones, ¿en qué debes mejorar? Por ejemplo si tu puntaje más bajo fue en la parte de comprensión lectora, organizate un plan de estudio focalizado en esa área, visita la sección de este sitio y como complemento visita libros.html que puede servirte como guía para que comiences a leer textos diferentes a los libros de texto especializados en el examen. 
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Si te ha ido mal en kanji, explora las diferentes aplicaciones para móviles o sitios en internet donde puedas repasar vocabulario y kanji. 
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  ¿O tu nota más baja ha sido en la parte auditiva? Para esto mirar películas, series o escuchar algún podcast puede servirte. También puedes buscar en la web o en Youtube modelos de examen Chokai 超解 para acostumbrarse al formato del examen.
+
+                </label>
+              </div>
+             
+        
+   
+    </div>
+        </section>
+
+
+
+
+
 
         <!-- seccion  cards-->
         <section class="container flex-column justify-content-center align-items-center">
-          <article class="col-12 col-md-12 col-lg-12 m-1">
-            <h3>Mi camino por los diferentes niveles</h3>
-              <p>En cada seccion presento los libros que he utilizado para rendir los niveles N4, N3 y N2, y los que estoy utilizando para estudiar para N1.</p>
+          <article class="col-12 col-md-12 col-lg-12 m-1 mt-5">
+            <h4>Mi camino por los diferentes niveles</h4>
+              <p class="mt-3">En cada seccion presento los libros que he utilizado para rendir los niveles N4, N3 y N2, y los que estoy utilizando para estudiar para N1.</p>
               <p>
-                Cada uno elige la forma que le resulta más cómoda y efectiva para estudiar. Este enfoque está hecho en base a mi experiencia tomando clases grupales en institutos privados y clases particulares. 
+                Este enfoque está hecho en base a mi experiencia tomando clases grupales en institutos privados y clases particulares. 
                 Los niveles van aumentando en grado de dificultad y contenido, por lo que para seguir avanzando es recomendable tener estudiado y sabido el contenido de gramática del nivel anterior. Por ejemplo para avanzar a N3, recomiendo haber repasado y comprendido el contenido de niveles anteriores, en este caso N5 y N4. Independientemente de si se rinde el examen de manera oficial o no, antes de avanzar de nivel realiza un examen de simulacro. Existen libros especializados en modelos de examen, que no enseñan contenido propio del nivel sino que dan por sentado que ya los has estudiado y directamente te ofrecen diferentes niveles de examen completos.
               </p>
             </div>
           </article>
-          <h5>Selecciona un nivel ⬇️</h5>
+          <h5 class="p-3">Selecciona un nivel ⬇️</h5>
           <div class="row row-cols-4 gap-3 m-1">
             <article class="row col-12 col-md-6 col-lg-3 columna">
                <!--card nivel 4-5-->
                <div class="card bg-light border-warning" style="width: 18rem;">
-                <img src="https://via.placeholder.com/150x200.png?text=Placeholder" class="card-img-top img-fluid mx-auto" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">JLPT N4-5</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Los primeros niveles del JLPT. El material disponible fue creciendo a lo largo de estos años, de a poco iré agregando mas información.</p>
                   <a href="./nivel4-5.html" class="btn boton-link-n4 hvr-float">Ir al nivel</a>
                 </div>
               </div>
@@ -110,10 +238,9 @@
             <article class="row col-12 col-md-6 col-lg-3 columna">
               <!--card nivel 3-->
               <div class="card bg-light border-success" style="width: 18rem;">
-               <img src="https://via.placeholder.com/150x200.png?text=Placeholder" class="card-img-top" alt="...">
                <div class="card-body">
                  <h5 class="card-title">JLPT N3</h5>
-                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <p class="card-text">En el nivel 3, el material disponible comienza a incrementar en variedad, te presento las series de libros más populares.</p>
                  <a href="./nivel3.html" class="btn boton-link-n3 hvr-float">Ir al nivel</a>
                </div>
              </div>
@@ -121,10 +248,9 @@
            <article class="row col-12 col-md-6 col-lg-3 columna">
             <!--card nivel 2-->
             <div class="card bg-light border-danger" style="width: 18rem;">
-             <img src="https://via.placeholder.com/150x200.png?text=Placeholder" class="card-img-top" alt="...">
              <div class="card-body">
                <h5 class="card-title">JLPT N2</h5>
-               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <p class="card-text">En el nivel 2 hay mucha variedad de material, es difícil poder encontrar un libro de texto o serie de libros que trate todo el contenido, y hay que combinar entre las series de libros más populares.</p>
                <a href="./nivel2.html" class="btn btn boton-link-n2 hvr-float">Ir al nivel</a>
              </div>
            </div>
@@ -132,41 +258,28 @@
          <article class="row col-12 col-md-6 col-lg-3 columna">
           <!--card nivel 1-->
           <div class="card bg-light border-primary" style="width: 18rem;">
-           <img src="https://via.placeholder.com/150x200.png?text=Placeholder" class="card-img-top" alt="...">
-           <div class="card-body">
-             <h5 class="card-title">JLPT N1</h5>
-             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-             <a href="./nivel1.html" class="btn btn boton-link-n1 hvr-float">Ir al nivel</a>
-           </div>
-         </div>
-       </article>
+              <div class="card-body">
+                 <h5 class="card-title">JLPT N1</h5>
+                   <p class="card-text">Informacion sobre el nivel 1, el más alto del JLPT y los libros que estoy utilizando para estudiar.</p>
+                   <a href="./nivel1.html" class="btn btn boton-link-n1 hvr-float">Ir al nivel</a>
+                </div>
+              </div>
+          </article>
           </div>
         </section>
         <!-- Seccion Diccionarios -->
-        <section class="container">
-            <article class="col-12 col-md-12 col-lg-12 m-1">
-              <h4>Material de referencia</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt laudantium excepturi deserunt deleniti, laborum dolores doloribus sequi repudiandae similique, dolorem rem, blanditiis at maxime! Vero quam debitis architecto incidunt obcaecati.
-              </p>
+        <section class="container mb-5">
+            <article class="col-12 col-md-12 col-lg-12 m-1 mt-5 mb-4">
+              <h4>Material de extra</h4>
             </article>
-              <div class="card mb-3 bg-light border-dark" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="https://via.placeholder.com/150x200.png?text=Placeholder" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Diccionarios</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <a href="./diccionarios.html" class="btn btn boton-link-diccionarios hvr-float">Ir a Diccionarios</a>
-                    </div>
-                  </div>
+            <div class="card bg-light border-dark" style="width: 18rem;">
+              <div class="card-body">
+                 <h5 class="card-title">Diccionarios</h5>
+                   <p class="card-text">Diccionarios de gramatica, de kanji, etc.</p>
+                   <a href="./diccionarios.html" class="btn btn boton-link-diccionarios hvr-float">Ir a Diccionarios</a>
                 </div>
               </div>
             </article>
-
-        
         </section>
           <!-- Seccion Disclaimer -->
           <section class="container disclaimer rounded-3">
@@ -176,15 +289,10 @@
                     <p class="disclaimerFont">
                         Las reviews que comparto son en base a mi experiencia personal utilizando dicho material para estudiar Japonés y de ninguna manera pretendo tener todas las respuestas ni pretendo que este sitio sea tomado como una guía oficial. Espero que mi experiencia te ayude a la hora de elegir el metodo de estudio o libro indicado para ti.
                     </p>
+                    <p>Imagen de portada creditos <a href="https://jobsinjapan.com/">jobsinjapan.com</a></p>
                 </div>
             </article>
         </section>
-   
-         
-
-
-
-
 </main>
 
     <footer>
