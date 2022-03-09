@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="reviews reseñas de material de estudio, libros y aplicaciones para aprobar el examen internacional de japones JLPT N3">
-    <meta name="keywords" content="japonés, kanji, estudiar, manga, novelas en japonés, JLPT, noken, exámen internacional de japonés, como estudiar japonés, como aprobar el JLPT N3">
+    <meta name="keywords" content="japonés, kanji, estudiar, manga, novelas en japonés, JLPT, noken, exámen internacional de japonés, como estudiar japonés, como aprobar el JLPT">
+    <!-- Link AOS animacion -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--link css bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Link Font Sans -->
@@ -87,9 +89,11 @@
                         Es todo un proceso, y como tal hay que disfrutar de los pequeños pasos que damos. Mirando atrás, podremos notar que por ejemplo, ya somos capaces de reconocer hiragana y algunos kanji, luego podremos leer oraciones mas complejas, y cuando menos lo esperemos vamos a estar dando vuelta a nuestra primera página de un manga en japonés.
                     </p>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mt-3 d-flex flex-column justify-content-center align-items-center justify-content-center">
-                <img src="../imagenes/leer-main.png" class="img-fluid" alt="Libro con un gato en la tapa">
-            </div>
+                  <div class="col-12 col-md-6 col-lg-4 mt-3 d-flex flex-column justify-content-center align-items-center justify-content-center">
+                    <div data-aos="fade-left">
+                      <img src="../imagenes/leer-main.png" class="img-fluid" alt="Libro con un gato en la tapa">
+                    </div>
+                  </div>
     </section>
     <section class="container mt-5">
         <h3>Breve explicación de los formatos de libros en Japón</h3>
@@ -102,13 +106,17 @@
                     <h4>文庫本</h4>
                     <p>Bunko o bunko-bon es un término extensamente utilizado en Japón para los libros en formato paperback pequeño, diseñados para ser económicos, fáciles de transportar y que no ocupen mucho espacio en tu estantería o biblioteca.</p>
                     <p>En Japón he visto muchas personas de todas las edades leyendo este formato de libros en los trenes, su tamaño lo hace ideal para transportar y leer mientras se viaja al trabajo, por ejemplo. Su precio ronda los 600 yenes si se compra nuevo.</p>
-                     <img src="../imagenes/leer-bunkobonexample.jpeg" class="align-items-center img-fluid" alt="Bunkobon">
-                </div>
+                    <div class="text-center">
+                      <img src="../imagenes/leer-bunkobonexample.jpeg" class="align-items-center img-fluid rounded-3" alt="Bunkobon">
+                    </div> 
+                  </div>
                 <div class="col-12 col-md-6 col-lg-6 mt-2 consejosleer-2">
-                <h4>単行本</h4>
-                <p>El término Tankobon se lo conoce en el ámbito otaku porque son los clásicos tomos de manga. Se usa para referirse a un volumen compilatorio de una serie en particular, como un manga o novela ligera, a diferencia de revistas o series de obras completas que contienen múltiples títulos. Usualmente los capítulos de mangas son publicados por primera vez en revistas mensuales como Shonen Jump, y al llegar a una determinada cantidad de capítulos, estos son recopilados en un tankobon. </p>
-                <p>Estas compilaciones pueden ser tanto manga como historias cortas.</p>
-                <img src="../imagenes/leer-db-sm1.jpeg" class="align-items-center img-fluid" alt="Tankobon">
+                  <h4>単行本</h4>
+                  <p>El término Tankobon se lo conoce en el ámbito otaku porque son los clásicos tomos de manga. Se usa para referirse a un volumen compilatorio de una serie en particular, como un manga o novela ligera, a diferencia de revistas o series de obras completas que contienen múltiples títulos. Usualmente los capítulos de mangas son publicados por primera vez en revistas mensuales como Shonen Jump, y al llegar a una determinada cantidad de capítulos, estos son recopilados en un tankobon. </p>
+                  <p>Estas compilaciones pueden ser tanto manga como historias cortas.</p>
+                    <div class="text-center">
+                      <img src="../imagenes/leer-db-sm1.jpeg" class="align-items-center img-fluid rounded-3" alt="Tankobon">
+                  </div>
                 </div>
             </div>
             </div>
@@ -224,13 +232,18 @@
             </p>
         </article> 
         <div class="text-center mb-5">
+          <div data-aos="fade-up">
             <img src="../imagenes/leer-konbinihito_inside.png" class="align-items-center img-fluid w-80 mb-3" alt="Interior de una novela en japones">
+          </div>
+            
           <div class=""><em>Interior de una novela</em></div>
         </div>
         <article>
           <div class="row">
             <div class="col-12 col-md-4 col-lg-4 mb-3">
-              <img src="../imagenes/leer-sekaikara.jpeg" class="align-items-center img-fluid mb-4" alt="Sekai Kara Neko ga kieta Nara tapa">
+              <div data-aos="fade-right">
+                <img src="../imagenes/leer-sekaikara.jpeg" class="align-items-center img-fluid mb-4" alt="Sekai Kara Neko ga kieta Nara tapa">
+              </div>
             </div>
             <div class="col-12 col-md-8 col-lg-8 mb-3 mt-5">
               <h4>Elegir una novela</h4>
@@ -324,8 +337,11 @@
           Me cuesta seguirle el ritmo o me aburre? Entonces ese libro no es para ti. Si más adelante aun quieres darle una chance, agregalo a tu lista de pendientes.
           </p>
           </div>
-          <div class="col-12 col-md-4 col-lg-4 mb-3 mt-4 text-center">
-            <img src="../imagenes/harry-potter.jpeg" class="align-items-center img-fluid mb-4" alt="Harry Potter">
+          <div class="col-12 col-md-4 col-lg-4 mt-5 text-center">
+            <div data-aos="fade-left">
+              <img src="../imagenes/harry-potter.jpeg" class="align-items-center img-fluid mb-4" alt="Harry Potter">
+            </div>
+           
           </div>
       </div>
     </section>
@@ -345,11 +361,11 @@
           <p>Aqui hay un tutorial que puede servirte para crear una cuenta en Amazon Japan <a href="https://www.japan-codes.com/tutorials/how-to-create-a-japanese-amazon-account/" target="_blank">https://www.japan-codes.com/tutorials/how-to-create-a-japanese-amazon-account/</a></p>
           <div class="row">
             <div class="text-center mb-5">          
-              <a href="../imagenes/tameshiyomi-1-big-markup.png" target="_blank"><img src="../imagenes/tameshiyomi-1-small-markup.png" alt="Amazon Japan"></a>
+              <a href="../imagenes/tameshiyomi-1-big-markup.png" target="_blank"><img src="../imagenes/tameshiyomi-1-small-markup.png" class="sample de amazon japan" alt="Amazon Japan"></a>
             </div>
             <div class="text-center">⬇️</div>
             <div class="text-center mt-2 mb-4">  
-              <a href="../imagenes/tameshiyomi-2-big.png" target="_blank"><img src="../imagenes/tameshiyomi-2-small.png" alt="sample en japones"></a>
+              <a href="../imagenes/tameshiyomi-2-big.png" target="_blank"><img src="../imagenes/tameshiyomi-2-small.png" class="img-fluid" alt="sample en japones"></a>
             </div>
           </div>
         </div>
@@ -358,10 +374,10 @@
         </p>
         <div class="row d-flex text-center">
             <div class="col-12 col-md-4 col-lg-4">
-                <img src="../imagenes/leer-amazon-sample1s.png" class="align-items-center img-fluid mb-2" alt="">
+                <img src="../imagenes/leer-amazon-sample1s.png" class="align-items-center img-fluid mb-2" alt="leer amazon samples">
             </div>
             <div class="col-12 col-md-4 col-lg-4">
-                <img src="../imagenes/leer-amazon-sample2s.png" class="align-items-center img-fluid mb-2"  alt="">
+                <img src="../imagenes/leer-amazon-sample2s.png" class="align-items-center img-fluid mb-2"  alt="leer amazon samples">
             </div>
         </div>
         <p>Si quieres tener la versión en papel físico, lamentablemente Amazon Japan, por lo general, no hace envíos al exterior. En este caso, debemos elegir una tienda diferente, en mi caso la tienda que más uso es <a href="http://www.cdjapan.com">http://www.cdjapan.com</a> . Buscar el título del libro en romaji puede ser complicado porque a veces cdjapan no lo reconoce, lo mejor es pegar en el buscador el nombre en japonés.</p>
@@ -382,7 +398,11 @@
 <footer>
     <p>Derechos reservados por Balducci</p>
 </footer>
-
+<!-- script AOS animacion -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <!-- script de Bootstrap-->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
